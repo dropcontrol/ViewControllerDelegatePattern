@@ -13,6 +13,9 @@
 		0581F6482553969000C35EA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0581F6472553969000C35EA7 /* Preview Assets.xcassets */; };
 		0581F6532553969000C35EA7 /* ViewControllerDelegatePatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0581F6522553969000C35EA7 /* ViewControllerDelegatePatternTests.swift */; };
 		0581F65E2553969000C35EA7 /* ViewControllerDelegatePatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0581F65D2553969000C35EA7 /* ViewControllerDelegatePatternUITests.swift */; };
+		0581F66F255396F900C35EA7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0581F66E255396F900C35EA7 /* SecondView.swift */; };
+		0581F670255396F900C35EA7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0581F66E255396F900C35EA7 /* SecondView.swift */; };
+		0581F671255396F900C35EA7 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0581F66E255396F900C35EA7 /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 		0581F6592553969000C35EA7 /* ViewControllerDelegatePatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerDelegatePatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0581F65D2553969000C35EA7 /* ViewControllerDelegatePatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDelegatePatternUITests.swift; sourceTree = "<group>"; };
 		0581F65F2553969000C35EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0581F66E255396F900C35EA7 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			children = (
 				0581F6402553968F00C35EA7 /* ViewControllerDelegatePatternApp.swift */,
 				0581F6422553968F00C35EA7 /* ContentView.swift */,
+				0581F66E255396F900C35EA7 /* SecondView.swift */,
 				0581F6442553969000C35EA7 /* Assets.xcassets */,
 				0581F6492553969000C35EA7 /* Info.plist */,
 				0581F6462553969000C35EA7 /* Preview Content */,
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0581F66F255396F900C35EA7 /* SecondView.swift in Sources */,
 				0581F6432553968F00C35EA7 /* ContentView.swift in Sources */,
 				0581F6412553968F00C35EA7 /* ViewControllerDelegatePatternApp.swift in Sources */,
 			);
@@ -268,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0581F670255396F900C35EA7 /* SecondView.swift in Sources */,
 				0581F6532553969000C35EA7 /* ViewControllerDelegatePatternTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0581F671255396F900C35EA7 /* SecondView.swift in Sources */,
 				0581F65E2553969000C35EA7 /* ViewControllerDelegatePatternUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

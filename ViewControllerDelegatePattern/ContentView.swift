@@ -4,13 +4,28 @@
 //
 //  Created by hiroshi yamato on 2020/11/05.
 //
-
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View, secondViewDelegate{
+
+    @State var text: String = "not yet chagend"
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack{
+                Text("Main View")
+                NavigationLink(
+                    destination: SecondView(delegate: self, text: "Sucess send message"),
+                    label: {
+                        Text("Go to SecondView")
+                    })
+                Text(text)
+            }
+        }
+    }
+    
+    func returnData(text: String) {
+        self.text = text
     }
 }
 
@@ -19,3 +34,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
