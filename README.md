@@ -1,9 +1,9 @@
 # ViewControllerDelegatePattern
-ViewControllerでのDelegateのパターン
+ViewでのDelegateのパターン
 
 ## TL;DR
 
-ViewController間で値を渡すパターン。Viewを二つ用意。親から子へ渡すパターンと、子から親へ渡すパターンの2つを実装。値の渡し方は他にもあると思うけど、一番基本的なパターン。
+View間で値を渡すパターン。Viewを二つ用意。親から子へ渡すパターンと、子から親へ渡すパターンの2つを実装。値の渡し方は他にもあると思うけど、一番基本的なパターン。
 
 ## 親から子へ渡す場合
 
