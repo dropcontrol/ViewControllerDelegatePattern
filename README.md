@@ -1,4 +1,4 @@
-# ViewControllerDelegatePattern
+# ViewDelegatePattern（つい習慣でViewControllerって書いちゃったけど名前的にはこっちの方がいい）
 View間でのDelegateのパターン。またNavigationLinkを使ったページ遷移のサンプルにもなっている。
 
 ## TL;DR
