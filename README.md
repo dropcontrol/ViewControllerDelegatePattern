@@ -61,7 +61,7 @@ NavigationLink(
   destination: SecondView(delegate: self, text: "Sucess send message"),
 ```
 
-4. @StateでWrapした変数をUIKitに登録
+4. @StateでProperty Wrapperでシステムに状態監視を移譲した変数を登録
 
 ```
 @State var text: String = "not change yet"
