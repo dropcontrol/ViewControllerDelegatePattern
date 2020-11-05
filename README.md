@@ -1,5 +1,5 @@
 # ViewControllerDelegatePattern
-View間でのDelegateのパターン
+View間でのDelegateのパターン。またNavigationLinkを使ったページ遷移のサンプルにもなっている。
 
 ## TL;DR
 
@@ -74,6 +74,23 @@ func returnData(text: String) {
   self.text = text
 }
 ```
+
+## NavigationLinkでbackボタンを使わずに戻る
+
+@EnvironmentはSwiftUIの環境変数で、これを使右ことでいろいろと状態の監視や変更ができる。下記をSecondView.swiftに変数を作る。
+
+```
+@Environment(\.presentationMode) var presentation
+```
+これでpresentationModeの環境変数が取得できてるので、
+
+```
+Button(action: {
+  self.delegate?.returnData(text: "Success!!")
+  self.presentation.wrappedValue.dismiss()
+
+```
+と言う感じで、`self.presentation.wrappedValue.dismiss()`を呼び出せば画面を閉じることができる。これは他の画面遷移（例えばモーダルビューなど）でも同じ。
 
 といった感じ。
 
