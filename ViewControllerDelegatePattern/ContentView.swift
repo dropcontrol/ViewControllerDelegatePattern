@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ContentView: View, secondViewDelegate{
 
-    @State var text: String = "not yet chagend"
+    @State var text: String = "not change yet"
     
     var body: some View {
         NavigationView {

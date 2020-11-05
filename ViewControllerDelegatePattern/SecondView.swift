@@ -14,7 +14,7 @@ protocol secondViewDelegate {
 
 struct SecondView: View {
     var delegate: secondViewDelegate?
-    let text: String
+    var text: String = "Not Success"
     @Environment(\.presentationMode) var presentation
     
     var body: some View {
@@ -44,7 +44,7 @@ struct SecondView: View {
 
 struct SecondView_Previews: PreviewProvider {
     static var previews: some View {
-        SecondView(text: "")
+        SecondView()
     }
 }
 
