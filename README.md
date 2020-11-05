@@ -77,7 +77,7 @@ func returnData(text: String) {
 
 ## NavigationLinkでbackボタンを使わずに戻る
 
-@EnvironmentはSwiftUIの環境変数で、これを使右ことでいろいろと状態の監視や変更ができる。下記をSecondView.swiftに変数を作る。
+@EnvironmentはSwiftUIの環境変数で、これを使うことでいろいろと状態の監視や変更ができる。下記をSecondView.swiftに変数を作る。
 
 ```
 @Environment(\.presentationMode) var presentation
