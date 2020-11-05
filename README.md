@@ -23,7 +23,7 @@ NavigationLink(
   })
 ```
 
-delegateについては以下の子から親に渡す場合で説明する。
+delegateについては以下の子から親に渡す場合で説明するが、NavigationLinkのdestination毎に遷移先のViewとそのdelegateを呼び出せる。
 
 ## 子から親に値を渡す場合
 
@@ -51,9 +51,14 @@ Button(action: {
 })
 ```
 
-3. 親のContentView.swiftでSecondViewDelegateを追加
+3. 親のContentView.swiftでSecondViewDelegateを追加。またNavigationLinkのdestinationでViewのdelegateをselfに設定する。このタイミングで設定できるのは便利。
 ```
 struct ContentView: View, secondViewDelegate{
+```
+
+```
+NavigationLink(
+  destination: SecondView(delegate: self, text: "Sucess send message"),
 ```
 
 4. @StateでWrapした変数をUIKitに登録
