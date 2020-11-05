@@ -1,5 +1,5 @@
 # ViewControllerDelegatePattern
-ViewでのDelegateのパターン
+View間でのDelegateのパターン
 
 ## TL;DR
 
